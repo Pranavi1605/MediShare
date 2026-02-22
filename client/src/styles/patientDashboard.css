@@ -1,0 +1,210 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* MAIN LAYOUT */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Logo Section */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background: #2d6cdf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.brand h3 {
+  font-size: 16px;
+}
+
+.brand span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.menu li {
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 15px;
+}
+
+/* Active Blue */
+.menu li.active {
+  background: #2d6cdf;
+  color: white;
+  font-weight: 600;
+}
+
+/* Hover */
+.menu li:hover {
+  background: #e7f1ff;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f8f9fc;
+  border-radius: 10px;
+}
+
+.profile-avatar {
+  font-size: 24px;
+}
+
+.profile-section h4 {
+  font-size: 14px;
+}
+
+.profile-section span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 22px;
+}
+
+.create-btn {
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.create-btn:hover {
+  background: #1e4fbf;
+}
+
+/* ================= CONTENT ================= */
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Profile Card */
+.profile-card {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.avatar-large {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  margin-bottom: 15px;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-grid span {
+  font-size: 12px;
+  color: gray;
+}
+
+.info-grid h4 {
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+.blood {
+  color: red;
+}
+
+/* Allergy Box */
+.allergy-box {
+  margin-top: 20px;
+  background: #ffe5e5;
+  padding: 12px;
+  border-radius: 8px;
+  color: #a10000;
+  font-size: 14px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
